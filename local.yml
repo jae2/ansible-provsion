@@ -4,6 +4,7 @@
   - apt: name=python-httplib2 update_cache=yes
   - apt: name=vim 
   - apt: name=ruby 
+  - apt: name=gcc
   - gem: name=fpm state=latest
 
 
