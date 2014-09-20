@@ -7,6 +7,11 @@
   - apt: name=gcc
   - apt: name=make
   - gem: name=fpm state=latest
+  - name: Add core users.
+    user: name={{ item }} shell=/bin/bash groups=sudo,wheel state=present
+    with_items: 
+      - jedwards
+      - bob
 
 
 
