@@ -1,4 +1,5 @@
-- hosts: localhost
+- hosts: 127.0.0.1
+  connection: local
   tasks:
   - name: grab the json
     uri: url=https://ci.jenkins-ci.org/job/core_selenium-test/api/json HEADER_Content-Type="application/json" return_content=yes
