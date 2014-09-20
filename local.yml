@@ -5,6 +5,7 @@
   - apt: name=vim 
   - apt: name=ruby 
   - apt: name=gcc
+  - apt: name=make
   - gem: name=fpm state=latest
 
 
