@@ -8,11 +8,10 @@
   - apt: name=make
   - gem: name=fpm state=latest
   - name: Add core users.
-    user: name={{ item }} shell=/bin/bash groups=sudo state=present
+    user: name={{ item }} shell=/bin/bash groups=admin state=present
     with_items: 
       - jedwards
       - bob
-  - lineinfile: dest=/etc/sudoers state=present regexp='^%ADMIN ALL\=' line='%ADMIN ALL=(ALL) NOPASSWD:ALL' validate='visudo -cf %s'
 
 
 
