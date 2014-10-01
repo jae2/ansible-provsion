@@ -10,6 +10,8 @@
   - apt: name=python 
   - apt: name=python-pip
   - apt: name=python-dev
+  - pip: name=django
+  - pip: name=django-tagging
   - pip: name=carbon
   - pip: name=whisper
   - pip: name=graphite-web
