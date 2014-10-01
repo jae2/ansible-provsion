@@ -6,7 +6,7 @@
   - apt: name=ruby 
   - apt: name=gcc
   - apt: name=make
-  - apt: name=valgrind
+  - apt: name=valgrind # good for looking at memory leaks so they say.
   - gem: name=fpm state=latest
   - name: Add core users.
     user: name={{ item }} shell=/bin/bash groups=admin state=present
