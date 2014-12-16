@@ -10,6 +10,7 @@
   - apt: name=python 
   - apt: name=python-pip
   - apt: name=python-dev
+  - apt: name=ruby1.9.1-dev
 #  - pip: name=django
 #  - pip: name=django-tagging
 #  - pip: name=carbon
