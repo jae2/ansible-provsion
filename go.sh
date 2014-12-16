@@ -10,4 +10,4 @@ git clone https://github.com/jae2/ansible-provsion.git
 
 cd ansible-provsion
 
-sudo ansible-pull -U /tmp/ansible-provsion -i /var/hosts
+sudo ansible-pull -U /tmp/ansible-provsion -i hosts
