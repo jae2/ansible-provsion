@@ -6,18 +6,12 @@
   - apt: name=ruby 
   - apt: name=gcc
   - apt: name=make
-#  - apt: name=valgrind # good for looking at memory leaks so they say.
   - apt: name=python 
   - apt: name=python-pip
   - apt: name=python-dev
   - apt: name=ruby1.9.1-dev
-#  - pip: name=django
-#  - pip: name=django-tagging
-#  - pip: name=carbon
-#  - pip: name=whisper
-#  - pip: name=graphite-web
-#  - pip: name=https://github.com/graphite-project/ceres/tarball/master
   - gem: name=fpm state=latest
+  - gem: name=jekyll state=latest
   - name: Add core users.
     user: name={{ item }} shell=/bin/bash groups=admin state=present
     with_items: 
